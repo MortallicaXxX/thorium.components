@@ -1,5 +1,5 @@
 class cell extends thorium.components {
-  constructor(text = null, coll = 1, row = 1) {
+  constructor(text = null, row = 1, coll = 1) {
     super({
       type: "cell",
       prop: {

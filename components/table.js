@@ -1,10 +1,10 @@
 class table extends thorium.components {
-  constructor(nbrColl = 1, nbrLine = 1, cell = []) {
+  constructor(columns = 1, rows = 1, cell = []) {
     super({
       type: "div",
       prop: {
         class: "table",
-        style: `display:grid;grid-columns:${nbrColl};grid-rows:${nbrLine};`
+        style: `display:grid;grid-columns:${columns};grid-rows:${rows};`
       }
     });
     if (cell.length > 0 && !this.childrens) this.childrens = [];
