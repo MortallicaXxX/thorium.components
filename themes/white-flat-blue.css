@@ -19,3 +19,11 @@ button[option="shaded"] {
   );
   filter: drop-shadow(4px 4px 4px var(--default-color-2));
 }
+
+button[option="bordered"] {
+  background-image: linear-gradient(
+    rgba(173, 216, 230, 0.2),
+    rgba(173, 216, 230, 0.2)
+  );
+  filter: drop-shadow(3px 3px 1px darkblue);
+}

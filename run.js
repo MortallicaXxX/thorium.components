@@ -8,7 +8,11 @@ thorium.onReady = function (self) {
     {
       type: "div",
       prop: { id: "app" },
-      childrens: [new button("default"), new button("shaded", null, "shaded")]
+      childrens: [
+        new button("default"),
+        new button("shaded", null, "shaded"),
+        new button("bordered", null, "bordered")
+      ]
     }
   ]);
 
