@@ -1,0 +1,21 @@
+:root {
+  --default-color-1: whitesmoke;
+  --default-color-2: blue;
+}
+
+button[theme="whiteFlatBlue"] {
+  background-color: var(--default-color-2);
+  color: var(--default-color-1);
+  border-radius: 0.5vw;
+  border: none;
+  outline: none;
+  margin: 0.5vw;
+}
+
+button[option="shaded"] {
+  background-image: linear-gradient(
+    rgba(0, 0, 255, 0.8),
+    rgba(173, 216, 230, 0.6)
+  );
+  filter: drop-shadow(4px 4px 4px var(--default-color-2));
+}
