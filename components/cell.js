@@ -1,10 +1,18 @@
-class cell extends thorium.components {
-  constructor(text = null, row = 1, coll = 1) {
+class tbCell extends thorium.components {
+  constructor(
+    text = null,
+    row = 1,
+    coll = 1,
+    theme = "whiteFlatBlue",
+    option = "default"
+  ) {
     super({
-      type: "cell",
+      type: "tbCell",
       prop: {
         class: "cell",
         text: `<p>${text}</p>`,
+        theme: theme,
+        option: option,
         style: `grid-column:${coll};grid-row:${row};`
       }
     });

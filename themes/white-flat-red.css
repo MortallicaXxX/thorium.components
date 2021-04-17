@@ -1,11 +1,5 @@
 :root {
   --default-color-1: whitesmoke;
-  --default-color-2: rgba(0, 0, 255, 1);
-  --default-color-2-50a: rgba(0, 0, 255, 0.5);
-}
-
-:root {
-  --default-color-1: whitesmoke;
   --default-color-2: rgba(255, 0, 0, 1);
   --default-color-2-50a: rgba(255, 0, 0, 0.5);
   --default-color-2-20a: rgba(255, 0, 0, 0.2);
@@ -35,10 +29,10 @@ button[option="shaded"] {
 
 button[option="bordered"] {
   background-image: linear-gradient(
-    rgba(173, 216, 230, 0.2),
-    rgba(173, 216, 230, 0.2)
+    var(--default-color-2-light-20a),
+    var(--default-color-2-light-20a)
   );
-  filter: drop-shadow(3px 3px 1px darkblue);
+  filter: drop-shadow(3px 3px 1px var(--default-color-2-dark));
 }
 
 /* tbCell */
@@ -46,8 +40,8 @@ button[option="bordered"] {
 tbCell[theme="whiteFlatBlue"] {
   background-color: var(--default-color-2-50a);
   background-image: linear-gradient(
-    rgba(0, 0, 255, 0.2),
-    rgba(173, 216, 230, 0.2)
+    var(--default-color-2-20a),
+    var(--default-color-2-light-20a)
   );
   color: var(--default-color-1);
   margin: 0.5vw;
