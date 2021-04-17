@@ -22,7 +22,7 @@ thorium.onReady = function (self) {
       prop: { id: "app" },
       childrens: [
         new table(5, 6, [
-          new tbCell("[1,1]", 1, 1),
+          new tbCell("[1,1]", 1, 1, "whiteFlatRed"),
           new tbCell("[1,2]", 1, 2),
           new tbCell("[1,3]", 1, 3),
           new tbCell("[1,4]", 1, 4),

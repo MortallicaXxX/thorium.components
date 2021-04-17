@@ -9,6 +9,11 @@ class button extends thorium.components {
         theme: theme,
         option: option,
         text: `<p>${text}</p>`
+      },
+      proto: {
+        onClick: function () {
+          console.log(this.e);
+        }
       }
     });
   }

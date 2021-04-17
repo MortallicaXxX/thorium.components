@@ -1,24 +1,18 @@
 :root {
-  --default-color-1: whitesmoke;
-  --default-color-2: rgba(0, 0, 255, 1);
-  --default-color-2-50a: rgba(0, 0, 255, 0.5);
-}
-
-:root {
-  --default-color-1: whitesmoke;
-  --default-color-2: rgba(255, 0, 0, 1);
-  --default-color-2-50a: rgba(255, 0, 0, 0.5);
-  --default-color-2-20a: rgba(255, 0, 0, 0.2);
-  --default-color-2-dark: darkred;
-  --default-color-2-light: rgb(240, 128, 128);
-  --default-color-2-light-20a: rgba(240, 128, 128, 0.2);
+  --wfb-default-color-1: whitesmoke;
+  --wfb-default-color-2: rgba(0, 0, 255, 1);
+  --wfb-default-color-2-50a: rgba(0, 0, 255, 0.5);
+  --wfb-default-color-2-20a: rgba(0, 0, 255, 0.2);
+  --wfb-default-color-2-dark: navy;
+  --wfb-default-color-2-light: rgba(173, 216, 230, 1);
+  --wfb-default-color-2-light-20a: rgba(173, 216, 230, 0.2);
 }
 
 /* button */
 
 button[theme="whiteFlatBlue"] {
-  background-color: var(--default-color-2);
-  color: var(--default-color-1);
+  background-color: var(--wfb-default-color-2);
+  color: var(--wfb-default-color-1);
   border-radius: 0.5vw;
   border: none;
   outline: none;
@@ -30,7 +24,7 @@ button[option="shaded"] {
     rgba(0, 0, 255, 0.8),
     rgba(173, 216, 230, 0.6)
   );
-  filter: drop-shadow(4px 4px 4px var(--default-color-2));
+  filter: drop-shadow(4px 4px 4px var(--wfb-default-color-2));
 }
 
 button[option="bordered"] {
@@ -38,18 +32,18 @@ button[option="bordered"] {
     rgba(173, 216, 230, 0.2),
     rgba(173, 216, 230, 0.2)
   );
-  filter: drop-shadow(3px 3px 1px darkblue);
+  filter: drop-shadow(3px 3px 1px var(--wfb-default-color-2-dark));
 }
 
 /* tbCell */
 
 tbCell[theme="whiteFlatBlue"] {
-  background-color: var(--default-color-2-50a);
+  background-color: var(--wfb-default-color-2-50a);
   background-image: linear-gradient(
     rgba(0, 0, 255, 0.2),
     rgba(173, 216, 230, 0.2)
   );
-  color: var(--default-color-1);
+  color: var(--wfb-default-color-1);
   margin: 0.5vw;
   text-align: center;
   border-radius: 0.5vw;

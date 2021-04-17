@@ -1,18 +1,18 @@
 :root {
-  --default-color-1: whitesmoke;
-  --default-color-2: rgba(255, 0, 0, 1);
-  --default-color-2-50a: rgba(255, 0, 0, 0.5);
-  --default-color-2-20a: rgba(255, 0, 0, 0.2);
-  --default-color-2-dark: darkred;
-  --default-color-2-light: rgb(240, 128, 128);
-  --default-color-2-light-20a: rgba(240, 128, 128, 0.2);
+  --wfr-default-color-1: whitesmoke;
+  --wfr-default-color-2: rgba(255, 0, 0, 1);
+  --wfr-default-color-2-50a: rgba(255, 0, 0, 0.5);
+  --wfr-default-color-2-20a: rgba(255, 0, 0, 0.2);
+  --wfr-default-color-2-dark: darkred;
+  --wfr-default-color-2-light: rgb(240, 128, 128);
+  --wfr-default-color-2-light-20a: rgba(240, 128, 128, 0.2);
 }
 
 /* button */
 
-button[theme="whiteFlatBlue"] {
-  background-color: var(--default-color-2);
-  color: var(--default-color-1);
+button[theme="whiteFlatRed"] {
+  background-color: var(--wfr-default-color-2);
+  color: var(--wfr-default-color-1);
   border-radius: 0.5vw;
   border: none;
   outline: none;
@@ -24,26 +24,26 @@ button[option="shaded"] {
     rgba(0, 0, 255, 0.8),
     rgba(173, 216, 230, 0.6)
   );
-  filter: drop-shadow(4px 4px 4px var(--default-color-2));
+  filter: drop-shadow(4px 4px 4px var(--wfr-default-color-2));
 }
 
 button[option="bordered"] {
   background-image: linear-gradient(
-    var(--default-color-2-light-20a),
-    var(--default-color-2-light-20a)
+    var(--wfr-default-color-2-light-20a),
+    var(--wfr-default-color-2-light-20a)
   );
-  filter: drop-shadow(3px 3px 1px var(--default-color-2-dark));
+  filter: drop-shadow(3px 3px 1px var(--wfr-default-color-2-dark));
 }
 
 /* tbCell */
 
-tbCell[theme="whiteFlatBlue"] {
-  background-color: var(--default-color-2-50a);
+tbCell[theme="whiteFlatRed"] {
+  background-color: var(--wfr-default-color-2-50a);
   background-image: linear-gradient(
-    var(--default-color-2-20a),
-    var(--default-color-2-light-20a)
+    var(--wfr-default-color-2-20a),
+    var(--wfr-default-color-2-light-20a)
   );
-  color: var(--default-color-1);
+  color: var(--wfr-default-color-1);
   margin: 0.5vw;
   text-align: center;
   border-radius: 0.5vw;
