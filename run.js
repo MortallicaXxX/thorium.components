@@ -65,7 +65,7 @@ thorium.onReady = function (self) {
 
   self.gui.buildIn(document.body).then(function () {
     self.initialise();
-    thorium.console.setStyle("messageExemple", "background:green;padding:2px;");
-    thorium.log(exempleName, "messageExemple");
+    self.console.setStyle("messageExemple", "background:green;padding:2px;");
+    self.log(exempleName, "messageExemple");
   });
 };
