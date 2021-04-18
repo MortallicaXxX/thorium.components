@@ -1,22 +1,22 @@
 class calendrier extends thorium.components {
-  constructor() {
+  constructor(theme = "whiteFlatBlue", option = "default") {
     let date = new Date(Date.now()).getDate(),
       month = new Date(Date.now()).getMonth(),
       year = new Date(Date.now()).getFullYear();
 
-    let days = function(){
+    let days = function () {
       var toReturn = [];
-      for(var x = 1 ; x <= 5 ; x++){
-        for(var y = 1 ; y <= 6 ; y++){
-          toReturn.push(new tbCell(x*y,x,y))
+      for (var x = 1; x <= 5; x++) {
+        for (var y = 1; y <= 6; y++) {
+          toReturn.push(new tbCell(x * y, x, y));
         }
       }
       return toReturn;
-    }
+    };
 
     super({
       type: "div",
-      prop: { class: "calendrier"},
+      prop: { class: "calendrier", theme: theme, option: option },
       childrens: [
         {
           type: "header-content",
@@ -25,7 +25,7 @@ class calendrier extends thorium.components {
               type: "btn-prev",
               prop: {
                 name: "prev",
-                text: icons.arrow1,
+                text: icons.arrow1
               }
             },
             {

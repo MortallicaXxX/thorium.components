@@ -51,81 +51,87 @@ tbCell[theme="whiteFlatBlue"] {
 
 /* calendrier */
 
-.calendrier{
+.calendrier[theme="whiteFlatBlue"] {
   width: min-content;
 }
 
-.calendrier svg{
-  min-width: 1vw;
+.calendrier[theme="whiteFlatBlue"] svg {
+  width: 1vw;
+  height: 1vw;
+  fill: var(--wfb-default-color-2-20a);
+  margin: auto;
+}
+
+.calendrier[theme="whiteFlatBlue"] header-content {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  margin: 0.25vw 0;
   min-height: 1vw;
-  fill : var(--wfb-default-color-2-20a);
-  border-radius:
 }
 
-.calendrier header-content{
-  display:grid;
-  grid-template-columns:1fr min-content 1fr;
-  margin:0.25vw 0;
-}
-
-.calendrier btn-prev{
-  grid-column:1;
-  grid-row:1;
-  height:1vw;
+.calendrier[theme="whiteFlatBlue"] btn-prev {
+  grid-column: 1;
+  grid-row: 1;
+  width: 1vw;
+  height: 1vw;
   transform: rotateZ(180deg);
+  margin: auto;
   margin-right: 0.5vw;
-  margin-left: auto;
   border: 3px solid var(--wfb-default-color-2-20a);
   border-radius: 0.25vw;
+  display: grid;
 }
 
-.calendrier date{
-  grid-column:2;
+.calendrier[theme="whiteFlatBlue"] date {
+  grid-column: 2;
   min-width: 12ch;
-  grid-row:1;
-  color:var(--wfb-default-color-1);
+  grid-row: 1;
+  color: var(--wfb-default-color-1);
   background-color: var(--wfb-default-color-2-20a);
   border-radius: 0.5vw;
   width: fit-content;
-  margin:auto;
+  margin: auto;
 }
 
-.calendrier btn-next{
-  grid-column:3;
-  grid-row:1;
-  height:1vw;
-  width:1vw;
-  margin-right: auto;
+.calendrier[theme="whiteFlatBlue"] btn-next {
+  grid-column: 3;
+  grid-row: 1;
+  height: 1vw;
+  width: 1vw;
+  margin: auto;
   margin-left: 0.5vw;
   border: 3px solid var(--wfb-default-color-2-20a);
   border-radius: 0.25vw;
+  display: grid;
 }
 
-.calendrier btn-prev:hover , .calendrier btn-next:hover{
+.calendrier[theme="whiteFlatBlue"] btn-prev:hover,
+.calendrier[theme="whiteFlatBlue"] btn-next:hover {
   border-color: transparent;
   background-color: var(--wfb-default-color-2-20a);
 }
 
-.calendrier btn-prev:hover svg , .calendrier btn-next:hover svg{
-  fill:var(--wfb-default-color-1);
+.calendrier[theme="whiteFlatBlue"] btn-prev:hover svg,
+.calendrier[theme="whiteFlatBlue"] btn-next:hover svg {
+  fill: var(--wfb-default-color-1);
 }
 
-.calendrier days-container{
-  grid-column:3;
-  grid-row:1;
-  height:1vw;
-  width:1vw;
+.calendrier[theme="whiteFlatBlue"] days-container {
+  grid-column: 3;
+  grid-row: 1;
+  height: 1vw;
+  width: 1vw;
 }
 
-.calendrier tbCell.tbCell{
+.calendrier[theme="whiteFlatBlue"] tbCell.tbCell {
   min-width: 10ch;
   min-height: 50px;
   border: 1px solid var(--wfb-default-color-2-20a);
-  margin:0;
-  border-radius:0;
+  margin: 0;
+  border-radius: 0;
 }
 
-.calendrier tbCell.tbCell p{
+.calendrier[theme="whiteFlatBlue"] tbCell.tbCell p {
   width: 2ch;
   margin: auto auto 0 0;
 }

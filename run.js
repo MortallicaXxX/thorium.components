@@ -4,10 +4,14 @@ thorium.onReady = function (self) {
     parent: document.body
   };
 
+  var exempleName = "exempleName";
+
   /*
    * exemple bouttons
    */
-  /*self.GUI([
+  /*
+  exempleName = "Bouttons";
+  self.GUI([
     {
       type: "div",
       prop: { id: "app" },
@@ -17,12 +21,15 @@ thorium.onReady = function (self) {
         new button("bordered", null, "bordered")
       ]
     }
-  ]);*/
+  ]);
+  */
 
   /*
    * exemple table + cell
    */
-  /*self.GUI([
+  /*
+  exempleName = "Table + cell";
+  self.GUI([
     {
       type: "div",
       prop: { id: "app" },
@@ -41,11 +48,13 @@ thorium.onReady = function (self) {
         ])
       ]
     }
-  ]);*/
+  ]);
+  */
 
   /*
    * exemple calendrier
    */
+  exempleName = "Calendrier";
   self.GUI([
     {
       type: "div",
@@ -56,5 +65,7 @@ thorium.onReady = function (self) {
 
   self.gui.buildIn(document.body).then(function () {
     self.initialise();
+    thorium.console.setStyle("messageExemple", "background:green;padding:2px;");
+    thorium.log(exempleName, "messageExemple");
   });
 };
