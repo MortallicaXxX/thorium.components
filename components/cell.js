@@ -9,7 +9,7 @@ class tbCell extends thorium.components {
     super({
       type: "tbCell",
       prop: {
-        class: "cell",
+        class: "tbCell",
         text: `<p>${text}</p>`,
         theme: theme,
         option: option,

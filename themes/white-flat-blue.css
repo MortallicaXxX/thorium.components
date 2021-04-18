@@ -48,3 +48,84 @@ tbCell[theme="whiteFlatBlue"] {
   text-align: center;
   border-radius: 0.5vw;
 }
+
+/* calendrier */
+
+.calendrier{
+  width: min-content;
+}
+
+.calendrier svg{
+  min-width: 1vw;
+  min-height: 1vw;
+  fill : var(--wfb-default-color-2-20a);
+  border-radius:
+}
+
+.calendrier header-content{
+  display:grid;
+  grid-template-columns:1fr min-content 1fr;
+  margin:0.25vw 0;
+}
+
+.calendrier btn-prev{
+  grid-column:1;
+  grid-row:1;
+  height:1vw;
+  transform: rotateZ(180deg);
+  margin-right: 0.5vw;
+  margin-left: auto;
+  border: 3px solid var(--wfb-default-color-2-20a);
+  border-radius: 0.25vw;
+}
+
+.calendrier date{
+  grid-column:2;
+  min-width: 12ch;
+  grid-row:1;
+  color:var(--wfb-default-color-1);
+  background-color: var(--wfb-default-color-2-20a);
+  border-radius: 0.5vw;
+  width: fit-content;
+  margin:auto;
+}
+
+.calendrier btn-next{
+  grid-column:3;
+  grid-row:1;
+  height:1vw;
+  width:1vw;
+  margin-right: auto;
+  margin-left: 0.5vw;
+  border: 3px solid var(--wfb-default-color-2-20a);
+  border-radius: 0.25vw;
+}
+
+.calendrier btn-prev:hover , .calendrier btn-next:hover{
+  border-color: transparent;
+  background-color: var(--wfb-default-color-2-20a);
+}
+
+.calendrier btn-prev:hover svg , .calendrier btn-next:hover svg{
+  fill:var(--wfb-default-color-1);
+}
+
+.calendrier days-container{
+  grid-column:3;
+  grid-row:1;
+  height:1vw;
+  width:1vw;
+}
+
+.calendrier tbCell.tbCell{
+  min-width: 10ch;
+  min-height: 50px;
+  border: 1px solid var(--wfb-default-color-2-20a);
+  margin:0;
+  border-radius:0;
+}
+
+.calendrier tbCell.tbCell p{
+  width: 2ch;
+  margin: auto auto 0 0;
+}
