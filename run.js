@@ -4,6 +4,9 @@ thorium.onReady = function (self) {
     parent: document.body
   };
 
+  /*
+   * exemple bouttons
+   */
   /*self.GUI([
     {
       type: "div",
@@ -16,7 +19,10 @@ thorium.onReady = function (self) {
     }
   ]);*/
 
-  self.GUI([
+  /*
+   * exemple table + cell
+   */
+  /*self.GUI([
     {
       type: "div",
       prop: { id: "app" },
@@ -34,6 +40,17 @@ thorium.onReady = function (self) {
           new tbCell("[3,1/5]", "3", "1/5")
         ])
       ]
+    }
+  ]);*/
+
+  /*
+   * exemple calendrier
+   */
+  self.GUI([
+    {
+      type: "div",
+      prop: { id: "app" },
+      childrens: [new calendrier()]
     }
   ]);
 

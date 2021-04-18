@@ -7,7 +7,7 @@ class table extends thorium.components {
     option = "default"
   ) {
     super({
-      type: "div",
+      type: "table",
       prop: {
         class: "table",
         theme: theme,
